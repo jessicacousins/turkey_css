@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7d8a2;
+  font-family: Arial, sans-serif;
+}
+
+.turkey {
+  position: relative;
+  width: 150px;
+  height: 200px;
+}
+
+.feathers {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.feather {
+  width: 40px;
+  height: 90px;
+  background-color: #d46a6a;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  transform-origin: bottom center;
+}
+
+.feather1 {
+  background-color: #d46a6a;
+  transform: rotate(-45deg);
+  top: 15px;
+  left: 25px;
+  z-index: -5;
+}
+
+.feather2 {
+  background-color: #e68b3c;
+  transform: rotate(-15deg);
+  top: 9px;
+  left: 30px;
+  z-index: -4;
+}
+
+.feather3 {
+  background-color: #f7b733;
+  top: 5px;
+  left: 55px;
+  z-index: -3;
+}
+
+.feather4 {
+  background-color: #e68b3c;
+  transform: rotate(15deg);
+  top: 9px;
+  left: 80px;
+  z-index: -4;
+}
+
+.feather5 {
+  background-color: #d46a6a;
+  transform: rotate(45deg);
+  top: 15px;
+  left: 85px;
+  z-index: -5;
+}
+
+.turkeyBody {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 120px;
+  background-color: #6a4f4b;
+  border-radius: 50px 50px 20px 20px;
+}
+
+.eyes {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.eye {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.beak {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #e5ac33;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.wattle {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: 8px;
+  height: 20px;
+  background-color: #c22b2b;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.legs {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+
+.leg {
+  width: 15px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #e5ac33;
+}
